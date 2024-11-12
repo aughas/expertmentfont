@@ -6,10 +6,65 @@ import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
 ---
 <MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
-	</article>
+	<div class="grid grid-cols-5">
+		<div class="col-span-1">
+			<header class="fixed top-0 bottom-0">
+				<a href="#hero"><img class="w-[300px] p-[65px]" src="3dlogoglowcopy.png" alt="logo"></a>
+				<ul>
+					<li>
+						<a href="#inspo">Inspiration</a>
+					</li>
+					<li>
+						<a href="#showcase">Showcase</a>
+					</li>
+					<li>
+						<a href="#process">Process</a>
+					</li>
+				</ul>
+			</header>
+		</div>
+	
+		<div class="col-span-3">
+			
+				<section id="hero">
+					<img src="hero.jpg" alt="">
+				</section>
+			
+			
+				<section id="inspo">
+					<p>Expert Ment is a unique font born from a happy typo—an "experiment" gone wonderfully wrong. Inspired by the pixelated fonts of old-school computer screens, it blends the structured simplicity of early digital text with the flowing elegance of cursive writing.</p>
+					<img src="insp1.png" alt="insp">
+					<img src="insp2.png" alt="insp">
+				</section>
+			
+				
+				<section id="homage">
+					<p>This font pays homage to a time when every pixel mattered, capturing the charm of retro tech while adding a playful, modern twist. Perfectly imperfect, Expert Ment invites you to embrace the beauty of creative accidents.</p>
+					<img src="decorative.png" alt="">
+				</section>
+			
+			
+				<section id="showcase">
+					<p>Here's how Expert Ment brings cursive to the digital grid. Explore the pixel-perfect alphabet that fuses retro tech vibes with handwritten elegance:</p>
+					<img src="horse.jpg" alt="">
+					<img src="cover.webp" alt="">
+				</section>
+			
+			
+				<section id="process">
+					<p>Expert Ment began with the elegant font Nautica, which I pixelized in Photoshop to capture a retro feel. After vectorizing the pixelated letters in Illustrator, I used Calligraphr to turn them into a functional font.</p>
+					<img src="aplhabet.png" alt="">
+					<img src="calgrph.png" alt="">
+				</section>
+			
+		</div>
+	</div>
+<!-- 
+	<section id="footer" class="flex flex-row">
+		<img src="outline.png" alt="">
+		<img src="outline.png" alt="">
+		<img src="outline.png" alt="">
+		<img src="outline.png" alt="">
+	</section> -->
+
 </MainLayout>
