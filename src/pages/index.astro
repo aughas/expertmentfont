@@ -6,65 +6,69 @@ import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
 ---
 <MainLayout title="Titel">
-	<div class="grid grid-cols-5">
-		<div class="col-span-1">
-			<header class="fixed top-0 bottom-0">
-				<a href="#hero"><img class="w-[300px] p-[65px]" src="3dlogoglowcopy.png" alt="logo"></a>
-				<ul>
+	<div class="lg:grid grid-cols-5">
+		<div class="col-span-1 p-16">
+			<header class="lg:fixed top-0 bottom-0">
+				<a href="#hero"><img class="w-[300px] pt-16" src="3dlogoglowcopy.png" alt="logo"></a>
+				<ul class="pt-96">
 					<li>
-						<a href="#inspo">Inspiration</a>
+						<a href="#inspo" class="text-xl font-mono">Inspiration</a>
 					</li>
 					<li>
-						<a href="#showcase">Showcase</a>
+						<a href="#showcase" class="text-xl font-mono">Showcase</a>
 					</li>
 					<li>
-						<a href="#process">Process</a>
+						<a href="#process" class="text-xl font-mono">Process</a>
 					</li>
 				</ul>
 			</header>
 		</div>
 	
-		<div class="col-span-3">
+		<div class=" col-start-3 col-span-3 p-16">
 			
 				<section id="hero">
 					<img src="hero.jpg" alt="">
 				</section>
 			
 			
-				<section id="inspo">
-					<p>Expert Ment is a unique font born from a happy typo—an "experiment" gone wonderfully wrong. Inspired by the pixelated fonts of old-school computer screens, it blends the structured simplicity of early digital text with the flowing elegance of cursive writing.</p>
-					<img src="insp1.png" alt="insp">
-					<img src="insp2.png" alt="insp">
+				<section id="inspo" class="pt-16">
+					<p class="w-96 text-xl font-mono" >Expert Ment is a unique font born from a happy typo—an "experiment" gone wonderfully wrong. Inspired by the pixelated fonts of old-school computer screens, it blends the structured simplicity of early digital text with the flowing elegance of cursive writing.</p>
+					<div class="flex flex-row space-x-4 pt-16">
+						<img src="insp2.png" alt="insp">
+						<img src="insp1.png" alt="insp">
+					</div>
 				</section>
 			
 				
 				<section id="homage">
-					<p>This font pays homage to a time when every pixel mattered, capturing the charm of retro tech while adding a playful, modern twist. Perfectly imperfect, Expert Ment invites you to embrace the beauty of creative accidents.</p>
-					<img src="decorative.png" alt="">
+					<p class="w-96 pt-10 text-xl font-mono">This font pays homage to a time when every pixel mattered, capturing the charm of retro tech while adding a playful, modern twist. Perfectly imperfect, Expert Ment invites you to embrace the beauty of creative accidents.</p>
+					<img src="decorative.png" alt="" class="py-20">
 				</section>
 			
 			
-				<section id="showcase">
-					<p>Here's how Expert Ment brings cursive to the digital grid. Explore the pixel-perfect alphabet that fuses retro tech vibes with handwritten elegance:</p>
+				<section id="showcase" class="pt-16">
+					<p class="w-96 text-xl font-mono">Here's how Expert Ment brings cursive to the digital grid. Explore the pixel-perfect alphabet that fuses retro tech vibes with handwritten elegance:</p>
 					<img src="horse.jpg" alt="">
-					<img src="cover.webp" alt="">
+					<img class="pt-10" src="cover.webp" alt="">
 				</section>
 			
 			
-				<section id="process">
-					<p>Expert Ment began with the elegant font Nautica, which I pixelized in Photoshop to capture a retro feel. After vectorizing the pixelated letters in Illustrator, I used Calligraphr to turn them into a functional font.</p>
-					<img src="aplhabet.png" alt="">
-					<img src="calgrph.png" alt="">
+				<section id="process" class="pt-16">
+					<p class="w-96 text-xl font-mono">Expert Ment began with the elegant font Nautica, which I pixelized in Photoshop to capture a retro feel. After vectorizing the pixelated letters in Illustrator, I used Calligraphr to turn them into a functional font.</p>
+					<div class="flex flex-row space-x-4 w-80">
+						<img src="alphabet.png" alt="" >
+						<img src="calgprh.png" alt="">
+					</div>
 				</section>
 			
 		</div>
 	</div>
-<!-- 
-	<section id="footer" class="flex flex-row">
-		<img src="outline.png" alt="">
-		<img src="outline.png" alt="">
-		<img src="outline.png" alt="">
-		<img src="outline.png" alt="">
-	</section> -->
+
+	<section id="footer" class="flex flex-row justify-center space-x-4 w-full">
+		<img src="outline.png" alt="" class="w-24 h-auto md:w-32 lg:w-80">
+		<img src="outline.png" alt="" class="w-24 h-auto md:w-32 lg:w-80">
+		<img src="outline.png" alt="" class="w-24 h-auto md:w-32 lg:w-80">
+		<img src="outline.png" alt="" class="w-24 h-auto md:w-32 lg:w-80">
+	</section>
 
 </MainLayout>
